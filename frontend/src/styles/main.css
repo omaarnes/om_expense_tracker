@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --primary-color: #222260;
+  --primary-color2: "color: rgba(34, 34, 96, .6)";
+  --primary-colo3: "color: rgba(34, 34, 96, .4)";
+  --color-green: #42ad00;
+  --color-grey: #aaa;
+  --color-accent: #f56692;
+  --color-delete: #ff0000;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  overflow: hidden;
+  color: rgba(34, 34, 96, 0.6);
+}
+
+.App {
+  height: 100vh;
+  background-image: url("../images/log-in-background.jpg");
+  position: relative;
+}
+
+.MainLayout {
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.InnerLayout {
+  padding: 2rem 1.5rem;
+  width: 100%;
+}
+
+main {
+  flex: 1;
+  background: rgba(252, 246, 249, 0.78);
+  border: 3px solid #ffffff;
+  backdrop-filter: blur(4.5px);
+  border-radius: 32px;
+  overflow: auto;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}

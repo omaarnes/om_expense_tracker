@@ -1,0 +1,15 @@
+.history-styled {
+  padding: 1rem;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.history-item p {
+  margin: 0;
+}

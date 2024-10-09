@@ -1,0 +1,70 @@
+.stats-con {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+
+  .chart-con {
+    grid-column: span 3; /* Adjusts for a more flexible grid layout */
+    height: auto; /* Allow height to adjust based on content */
+    position: relative; /* Use relative positioning for easier layout management */
+
+    .amount-con {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 1rem; /* Slightly smaller gap for a cleaner look */
+      margin-top: 1.5rem; /* Adjust margin for better spacing on different devices */
+      position: relative; /* Change to relative for better responsiveness */
+
+      .income,
+      .expense {
+        grid-column: span 2;
+        background: #0310c1;
+        border: 2px solid #ffffff;
+        box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+        border-radius: 20px;
+        padding: 1rem;
+        color: #ffffff; /* Ensure text is readable on dark background */
+
+        p {
+          font-size: 4rem; /* Slightly smaller font for better scaling */
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .history-con {
+    grid-column: span 2; /* Adjusts to fit the grid better */
+    h2 {
+      margin: 1rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.5rem; /* Standardize font size for better readability */
+    }
+
+    .salary-title {
+      font-size: 1.2rem;
+      span {
+        font-size: 1.5rem; /* Adjusted for better readability */
+      }
+    }
+
+    .salary-item {
+      background: #fcf6f9;
+      border: 2px solid #ffffff;
+      box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+      padding: 1rem;
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        font-weight: 600;
+        font-size: 1.4rem; /* Slightly smaller for better scaling */
+      }
+    }
+  }
+}
